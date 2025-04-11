@@ -1,0 +1,130 @@
+@charset "UTF-8";
+* {
+    box-sizing: border-box;
+}
+
+#wrap {
+    width: 500px;
+    height: 900px; 
+    margin: 0 auto;
+    position: relative;
+}
+
+
+#wrap img {
+    padding-top: 80px; /*상 좌우 하  */
+    display: block; 
+    margin: 0 auto; /* 블록 요소를 중앙 정렬 */
+}
+
+#wrap .p-font1 {
+	margin : 30px 0;
+	font-size: 18px;
+	text-align: center;
+}
+
+.p-font1 a {
+	color : #053872; 
+	font-weight: bold;
+	border-bottom: 1px solid;
+}
+
+form {
+    width: 500px; 
+    margin : 0;
+
+}
+.box1 {
+	width : 100%;
+	padding: 0;
+	display : flex;
+	margin-bottom: 10px;
+}
+
+label {
+    font-size: 21px;
+    margin : 0;
+    align-content: center;
+}
+
+/* input 태그 */
+input {
+    width: 360px; 
+    height: 50px;
+    border-radius: 20px;
+    margin-left: auto;
+    padding: 10px;
+    border: 2px solid grey;
+    font-size : 18px;
+}
+
+/* 아이디 입력 필드 */
+.inputId-st {
+    width: 220px;
+    margin-left:auto;
+    margin-right: 10px;
+}
+
+/* '중복확인' 버튼 스타일 */
+.checkUserId {
+    width: 130px;
+    margin:0;
+    font-size: 18px;
+    background-color: #d3d3d3;
+}
+
+.register-btn {
+	width:100%;
+	height : 50px;
+	margin-top:10px;
+	background-color: #B7D9FF;
+	font-size : 20px;
+	font-weight: bold;
+	color: #053872;
+	border : none;
+}
+
+.warning-msg{
+	color: red; 
+	text-align : right;
+	margin:5px 0 10px;
+}
+#warning-msg {
+	color: red; 
+	display:none;
+	margin-left : auto;
+	margin-top:5px;
+	margin-bottom: 10px;
+}
+
+.success-msg {
+	color: green;
+	margin:5px 0 10px;
+	text-align : right;
+}
+
+#wrap2 {
+	text-align: center;
+}
+
+/* 회원가입 완료 메시지 스타일 */
+.regisSuccess {
+	margin-top : 80px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #053872;  
+    margin-bottom: 30px;  /* 버튼과 간격을 주기 위한 여백 */
+}
+
+/* 로그인 버튼 스타일 */
+.regisSuccess-btn {
+    color : #053872;
+/*     width: 300px;  버튼 너비
+    height: 50px;  버튼 높이 */
+    font-size: 25px;
+    border-bottom: 1px solid;
+}
+
+
+
+

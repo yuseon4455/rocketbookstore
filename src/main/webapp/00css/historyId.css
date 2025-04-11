@@ -1,0 +1,182 @@
+@charset "UTF-8";
+
+@import
+   url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css")
+   ;
+
+.back {
+   margin-top: 17px;
+   margin-top: 157px;
+}
+
+.middle_header {
+   width: 1280px;
+   margin: 20px auto 0;
+}
+
+.middle_header .middle_top ul {
+   display: flex;
+   gap: 4px;
+   color: #000000;
+   font-size: 14px;
+   line-height: 19px;
+}
+
+.middle_header .middle_top ul>li:not(:last-child)::after {
+   content: '  /  ';
+}
+
+.middle_header .middle_top ul li img {
+   width: 14px;
+   height: 14px;
+   margin-top: 2px;
+}
+
+.middle {
+   width: 1280px;
+   padding: 42px 0 0 0;
+   display: flex;
+}
+
+.middle .left {
+   width: 170px;
+   margin-right: 46px;
+}
+
+
+.middle .left .face {
+   width: 120px;
+}
+.middle .left .face img{
+   width: 100%;
+}
+
+.middle .left .name {
+   font-size: 20px;
+   margin-top: 12px;
+   color: black;
+   margin-left:10px;
+}
+
+.middle .left .rank img{
+   width:20px;
+   height:auto;
+   margin: -2px 5px 0 0;
+   line-height:24px;
+   
+}
+.middle .left .rank{
+   font-size:14px;
+   margin-left:10px;
+   margin-top: 7px;
+}
+
+.middle .left #menu>ul li {
+   font-size: 15px;
+   line-height: 23px;
+   margin-bottom: 8px;
+   font-weight: 700;
+}
+
+#sub_menu {
+   margin-top: 24px;
+}
+
+.middle .left #menu ul ul li {
+   font-size: 14px;
+   line-height: 22px;
+   margin-top: 8px;
+   font-weight: normal;
+}
+
+.middle .right {
+   width: 1064px;
+}
+
+#delivery {
+   font-size: 20px;
+   line-height: 30px;
+   font-weight: 800;
+}
+
+.delivery_process {
+   display: flex;
+   justify-content: center;
+   gap: 25px;
+   margin: 40px 20px 20px 20px;
+}
+
+.delivery_process div p {
+   text-align: center;
+   margin-top: 5px;
+}
+
+.delivery_process div img {
+   width: 150px;
+   height: auto;
+}
+
+.delivery_process div img:not(:last-child)::after {
+   content: "";
+   display: inline-block;
+   width: 20px; /* 구분 이미지 크기 */
+   height: 20px; /* 구분 이미지 크기 */
+   background-image: url('/00BookJSP/00img/delivery/new_moon.png');
+   /* 구분선 이미지 */
+   background-size: contain;
+   background-repeat: no-repeat;
+   margin: 0 10px; /* 이미지 간격 조정 */
+}
+
+
+.notice {
+   width: 100%;
+   border-collapse: separate;
+   background-color: #f5f5f5;
+   border-radius: 16px;
+   margin: 20px 0;
+   
+}
+
+.notice td {
+   text-align: left;
+   color: #485751;
+   padding: 20px;
+}
+
+.state {
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0 40px 0;
+}
+
+.state th, .state td {
+   border: 1px solid #ccc;
+   padding: 8px;
+   text-align: center;
+}
+
+.state th {
+   background-color: #f2f2f2;
+}
+
+#circle{
+   width:17px;
+   margin:2px;
+}
+#circle_hr{
+   margin: 5px 0;
+}
+.information{
+   width: 100%;
+   border-collapse: collapse;
+   margin: 20px 0 40px 0;
+}
+.information th, .information td {
+   border: 1px solid #ccc;
+   padding: 8px;
+   text-align: center;
+}
+.information th {
+   background-color: #f2f2f2;
+}

@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+* {
+   cursor: url('/00BookJSP/00img/ico_favicon.png'), auto;
+}
+
+.eventHeader {
+	width: 100%;
+	height: 35px;
+	background-color: #137CF3;
+}
+
+.eventHeader>p {
+	font-size: 14px;
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+}
+
+.eventHeader span {
+	font-size: 16px;
+	font-weight: 600;
+}
+
+/****** #header .headerTop ******/
+#header {
+	width: 1280px;
+	margin: 40px auto 0;
+}
+
+#header .headerTop {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header .logo {
+	width: 250px;
+}
+
+#header .logo img {
+	width: 100%;
+}
+
+/* #header .searchForm */
+#header .searchForm {
+	position: relative;
+	display: flex;
+}
+
+.searchForm input {
+	width: 480px;
+	height: 46px;
+	outline: none;
+	border: 2px solid #137CF3;
+	border-radius: 40px;
+	padding: 5px 40px 0 20px;
+	position: relative;
+}
+
+.searchForm input::placeholder {
+	font-size: 14px;
+	padding-left: 10px;
+}
+
+.searchForm button {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 24px;
+	height: 24px;
+	background: url('../00img/ico_search.png') no-repeat center/contain;
+}
+/* #header .util */
+#header .util {
+	display: flex;
+}
+
+#header .util li {
+	margin-left: 8px;
+	font-size: 14px;
+	color: #595959;
+}
+
+#header .util li:first-child {
+	margin-left: 0px;
+}
+
+#header .util li::after {
+	content: '|';
+	clear: both;
+	padding-left: 8px;
+}
+
+#header .util li:last-child::after {
+	content: '';
+	padding-left: 0;
+}
+
+/****** #header .headerBottom ******/
+/* #header .menu */
+.headerBottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
+	margin: 30px 0;
+}
+
+.headerBottom .menu {
+	position: absolute;
+}
+
+.category-menu a {
+	padding: 8px 0px;
+	font-weight: 200;
+}
+
+.category-menu a:first-child {
+	padding-left: 0;
+}
+
+.headerBottom .hbUtil {
+	display: flex;
+	align-items: center;
+}
+
+.headerBottom .hbUtil li {
+	margin-left: 15px;
+}
+
+.headerLine {
+	margin: 0 auto 40px;
+	width:1280px;
+	height: 2px;
+	background-color: #595959;
+}
+
+#header.scrolled {
+	position: fixed;
+	width:1920px;
+	padding:0 320px;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+    margin: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header.scrolled .logo img {
+	width: 200px;
+}
+
+#header.scrolled .searchForm {
+	margin: 0 100px 0 50px;
+}
+
+#header.scrolled .searchForm input {
+	width: 300px;
+	height: 30px;
+	font-size: 14px;
+}
+
+#header.scrolled .headerBottom .menu {
+	display: none;
+}
+
+#header.scrolled .menu li:first-child {
+	position: absolute;
+	display: block;
+	left: 120px;
+}
+
+#header.scrolled .headerLine {
+	position: absolute;
+	top: 100px;
+}
+
+/****** footer ******/
+#footercontent {
+	width: 1280px;
+	margin:200px auto 0;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	padding: 20px;
+}
+
+#footertext {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+}
+
+#footertext p {
+	font-size: 16px;
+	margin: 5px;
+}
+
+#buttongroup button {
+	border: solid 1px #333;
+	width: 100px;
+	height: 40px;
+	margin-top: 20px;
+}
+
+#footerline {
+	height: 45px;
+	background-color: #137CF3;
+	font-size: 14px;
+}
+
+#footerline .ftinner {
+	width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	line-height: 45px;
+	color: #fff;
+}
+
+.footerInfor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.ftinner img {
+	width: 150px;
+}
+
+.footerInfor li::after {
+	content: '|';
+	padding: 0 15px;
+}
+
+.footerInfor li:nth-child(3)::after {
+	content: '';
+	padding: 0;
+}
+
+#topBtn {
+	display: block;
+	z-index: 100;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #f2f2f2;
+	text-align: center;
+	line-height: 40px;
+	position: fixed;
+	right: 60px;
+	bottom: 50px;
+}

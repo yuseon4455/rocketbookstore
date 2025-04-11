@@ -1,0 +1,376 @@
+@charset "UTF-8";
+
+* {
+   cursor: url('/00BookJSP/00img/ico_favicon.png'), auto;
+}
+
+.eventHeader {
+   width: 100%;
+   height: 35px;
+   background-color: #137CF3;
+}
+
+.eventHeader>p {
+   font-size: 14px;
+   color: #fff;
+   line-height: 35px;
+   text-align: center;
+}
+
+.eventHeader span {
+   font-size: 16px;
+   font-weight: 600;
+}
+
+/****** #header .headerTop ******/
+#header {
+   width: 1280px;
+   margin: 40px auto 0;
+}
+
+#header .headerTop {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#header .logo {
+   width: 250px;
+}
+
+#header .logo img {
+   width: 100%;
+}
+
+/* #header .searchForm */
+#header .searchForm {
+   position: relative;
+   display: flex;
+}
+
+.searchForm input {
+   width: 480px;
+   height: 46px;
+   outline: none;
+   border: 2px solid #137CF3;
+   border-radius: 40px;
+   padding: 5px 40px 0 20px;
+   position: relative;
+}
+
+.searchForm input::placeholder {
+   font-size: 14px;
+   padding-left: 10px;
+}
+
+.searchForm button {
+   position: absolute;
+   right: 20px;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 24px;
+   height: 24px;
+   background: url('../00img/ico_search.png') no-repeat center/contain;
+}
+/* #header .util */
+#header .util {
+   display: flex;
+}
+
+#header .util li {
+   margin-left: 8px;
+   font-size: 14px;
+   color: #595959;
+}
+
+#header .util li:first-child {
+   margin-left: 0px;
+}
+
+#header .util li::after {
+   content: '|';
+   clear: both;
+   padding-left: 8px;
+}
+
+#header .util li:last-child::after {
+   content: '';
+   padding-left: 0;
+}
+
+/****** #header .headerBottom ******/
+/* #header .menu */
+.headerBottom {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   position: relative;
+   margin: 30px 0;
+}
+
+.headerBottom .menu {
+   position: absolute;
+}
+
+.category-menu a {
+   padding: 8px 0px;
+   font-weight: 200;
+}
+
+.category-menu a:first-child {
+   padding-left: 0;
+}
+
+.headerBottom .hbUtil {
+   display: flex;
+   align-items: center;
+}
+
+.headerBottom .hbUtil li {
+   margin-left: 15px;
+}
+
+.headerLine {
+   margin: 0 auto 40px;
+   width: 1280px;
+   height: 2px;
+   background-color: #595959;
+}
+
+#header.scrolled {
+   position: fixed;
+   width: 1920px;
+   padding: 0 320px;
+   top: 0;
+   left: 0;
+   z-index: 100;
+   background-color: #fff;
+   margin: 0;
+   left: 50%;
+   transform: translateX(-50%);
+   height: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#header.scrolled .logo img {
+   width: 200px;
+}
+
+#header.scrolled .searchForm {
+   margin: 0 100px 0 50px;
+}
+
+#header.scrolled .searchForm input {
+   width: 300px;
+   height: 30px;
+   font-size: 14px;
+}
+
+#header.scrolled .headerBottom .menu {
+   display: none;
+}
+
+#header.scrolled .menu li:first-child {
+   position: absolute;
+   display: block;
+   left: 120px;
+}
+
+#header.scrolled .headerLine {
+   position: absolute;
+   top: 100px;
+}
+
+.bookdetail-con {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding-bottom: 130px;
+}
+
+.bookdetail_container {
+   display: flex;
+   align-items: center;
+   margin: 20px 0 60px 0;
+   justify-content: center;
+   width: 1200px;
+}
+
+.book-info {
+   margin-left: 50px;
+}
+
+.book-image img {
+   width: 400px;
+   height: 600px;
+   box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.3);
+}
+
+table {
+   border-collapse: collapse;
+}
+
+th {
+   width: 130px;
+   border-bottom: 1px solid #d9d9d9;
+   text-align: left;
+   padding: 20px;
+}
+
+td {
+   width: 260px;
+   border-bottom: 1px solid #d9d9d9;
+   text-align: left;
+   padding: 20px;
+}
+
+#detail-con {
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   border-top: 1px solid #d9d9d9;
+   bottom: 0px;
+   background-color: #fff;
+   width: 100%;
+   height: 70px;
+   box-sizing: border-box;
+   z-index: 1000;
+}
+
+.detail-box {
+   display: flex;
+   width: 100%;
+   max-width: 1280px;
+   align-items: center;
+   justify-content: space-between;
+   text-align: center;
+   padding: 10px;
+}
+
+.detail-box-left {
+   display: flex;
+   align-items: center;
+   gap: 15px;
+}
+
+.detail-left-p {
+   font-size: 20px;
+   font-weight: bold;
+}
+
+#bd_container {
+   width: 820px;
+}
+
+#bd_container h3 {
+   margin-bottom: 15px;
+}
+
+#bd_container span {
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+
+.detail-con {
+   background-color: #eee;
+   padding: 20px;
+   border-radius: 8px;
+}
+
+.bd-box1 {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 15px;
+}
+
+.bd-box1 button {
+   background-color: #fff;
+   border: 1px solid #ddd;
+   padding: 8px 12px;
+}
+
+.bd-box2 {
+   display: flex;
+   flex-direction: column;
+}
+
+.detail-box-right {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.bd-box2 button {
+   width: 100px;
+   background-color: #fff;
+   border: 1px solid #ddd;
+   padding: 8px 12px;
+   margin-bottom: 15px;
+}
+
+.bd-box2 span {
+   display: block;
+   line-height: 1.6;
+   margin-bottom: 10px;
+}
+
+.detail-box-right input[type="number"] {
+   border: 1px solid #ddd;
+   padding: 8px 12px;
+   width: 50px;
+   text-align: center;
+}
+
+.detail-box-right button, .detail-box-right form button[type="submit"] {
+   border: 1px solid #ddd;
+   background-color: #eee;
+   width: 50px;
+}
+
+.detail-box-right button {
+   font-size: 14px;
+   width: 40px;
+   height: 30px;
+}
+
+.txt {
+   display: inline-block;
+   width: 310px;
+   overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+}
+
+#topBtn {
+   display: block;
+   z-index: 100;
+   width: 40px;
+   height: 40px;
+   border-radius: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   color: #f2f2f2;
+   text-align: center;
+   line-height: 40px;
+   position: fixed;
+   right: 60px;
+   bottom: 80px;
+}
+
+.amount {
+   border: 1px solid #ddd;
+   width: 40px;
+   height: 30px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.amount p {
+   font-size: 14px;
+   margin: 0;
+}

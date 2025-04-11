@@ -1,0 +1,132 @@
+table {
+           width: 100%;
+           border-collapse: collapse;
+           margin-bottom: 20px;
+           margin-right: 200px;
+}
+th, td {
+    border-bottom: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: #f5f5f5;
+}
+
+ul, li{
+   list-style: none;
+}
+.middle_header{
+   width:1280px;
+   margin:20px auto 0;
+}
+
+.middle_header .middle_top ul{
+   display:flex;
+   gap:4px;
+   color:#000000;
+   font-size:14px;
+   line-height:19px;
+}
+.middle_header .middle_top ul > li:not(:last-child)::after{
+   content: '  /  '; 
+   }
+
+.middle_header .middle_top ul li img{
+   width:14px;
+   height:14px;
+   margin-top: 2px;
+}
+
+.middle .left .face {
+   width: 120px;
+}
+.middle .left .face img{
+   width: 100%;
+}
+.middle .left .name {
+   font-size: 20px;
+   margin-top: 12px;
+   color: black;
+   margin-left:10px;
+}
+
+.middle .left .rank img{
+   width:20px;
+   height:auto;
+   margin: -2px 5px 0 0;
+   line-height:24px;
+   
+}
+.middle .left .rank{
+   font-size:14px;
+   margin-left:10px;
+   margin-top: 7px;
+}
+#sub_menu{
+   margin-top: 24px;
+}
+.middle{
+   margin-bottom: 20px;
+   display: flex;
+   justify-content: space-between;
+   padding: 0 320px;
+   margin: 0 auto;
+   padding: 42px 0 0 0;
+}
+.middle .left #menu > ul li{
+   font-size:15px;
+   line-height:23px;
+   margin-bottom:8px;
+   font-weight: 700;
+}
+.middle .left #menu ul ul li{
+   font-size:14px;
+   line-height:22px;
+   margin-top: 8px;
+   font-weight: normal;
+}
+.middle .right{
+   width: 1064px;
+}
+
+#note{
+   position: relative;
+   padding:20px;
+   margin-top: 200px;
+
+   border: none;
+   border-radius: 20px;
+   width: auto;
+   height: auto;
+   background-color: #f5f5f5;
+}  
+#cardcancel{
+   position: relative;
+   padding:20px;
+   margin-top: 20px;
+   margin-bottom: 60px;
+   border: none;
+   border-radius: 20px;
+   width: auto;
+   height: auto;
+   background-color: #f5f5f5;
+}  
+#notecenter{
+   justify-content: center;
+   position: relative;
+   align-items: center;
+   width: 100%;
+}
+#notecenter li{
+   font-size: 14px;
+   margin-left: 20px;
+   padding-top: 5px;
+}
+
+.right .title{
+   font-size: 20px;
+   line-height: 30px;
+   font-weight: 800;
+   margin-bottom:20px;
+}

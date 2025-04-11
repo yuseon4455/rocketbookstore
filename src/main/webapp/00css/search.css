@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+#box1 {
+	width: 1280px;
+	margin: 0 auto;
+}
+
+#box1 h2 {
+	margin-bottom: 30px;
+}
+
+.searchList {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+}
+
+.searchList img {
+	width: 305px;
+	height: 458px;
+}
+
+.searchList h3 {
+	margin: 26px 0 17px;
+	font-size: 18px;
+	line-height: 20px;
+/* 	font-weight: 400; */
+}
+
+.book-container{
+	width: calc((100% - 60px) / 4);
+	margin-bottom: 20px
+}
+
+.book-container img {
+	width: 100%;
+    height: 458px;
+}
+
+.book-container p, .book-container h3 {
+	display: inline-block;
+	width: 295px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

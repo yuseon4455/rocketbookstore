@@ -1,0 +1,53 @@
+@charset "UTF-8";
+/****** main ******/
+.main{width: 1280px; margin: 40  auto 120px;}
+.main .swiper-button-prev, .main .swiper-button-next{
+	color:rgba(0,0,0,.2);
+}
+.main .mainVisual img{width: 1280px;}
+/* .main .swiper-pagination{color: #595959;} */
+
+
+
+/****** product-container ******/
+.product-container{width: 1280px; margin: 0 auto;}
+.product-container h2 {margin:120px 0 20px;}
+.product-container section> ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.product-container section> ul li{}
+.product-container section> ul li a {}
+.product-container img{width: 305px; height: 458px;}
+
+
+
+.bestItem {width:1280px;  margin-top:126px;}
+.bestItem .bestTxt{display: flex; height: 50px; margin-bottom: 20px}
+.bestItem .title {margin-bottom: 50px; font-size: 2.19rem; font-weight: 600;}
+
+.bestItem {}
+.bestItem .category {}
+.bestItem .category {margin-left: 50px}
+.bestItem .category li {display: inline-block; line-height: 50px; margin-left: 20px}
+.bestItem .category li:last-child {margin-bottom: 0;}
+.bestItem .category > .active {}
+.bestItem .category li a {font-size: 1.25rem; color: #868686;}
+.bestItem .category li a.active {color: #000; text-decoration: underline;}
+
+.bestItem .wrap .productList {}
+.bestItem .wrap .productList .product {display: none;}
+.bestItem .wrap .productList .product.active {display: block;}
+.bestItem .wrap .productList .product ul {display: flex; justify-content: space-between; flex-wrap: wrap;}
+.bestItem .wrap .productList .product ul li {width: 305px; height:458px;  margin-bottom: 50px;}
+.bestItem .wrap .productList .product ul li a {display: block;}
+.bestItem .wrap .productList .product ul li a .photo {margin-bottom: 20px;}
+.bestItem .wrap .productList .product ul li a .photo img {width: 100%;}
+
+.bestItem .wrap .productList .product ul li a .infor {}
+.bestItem .wrap .productList .product ul li a .infor h3 {
+	margin:26px 0 5px; width: 300px; overflow: hidden;
+	white-space: nowrap; text-overflow: ellipsis;
+	font-size:20px; font-weight: 600;}
+.bestItem .wrap .productList .product ul li a .infor .price {color:#565656;}
